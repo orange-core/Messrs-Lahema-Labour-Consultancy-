@@ -1,0 +1,789 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | Lahema Labour Consultancy</title>
+    <meta
+        name="description"
+        content="Learn about Messrs Lahema Labour Consultancy Limited, a Ndola-based practice focused on labour and employment law for employers and employees across Zambia."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="icon" type="image/png" href="assets/images/lahema-logo.png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- About page-specific styles -->
+    <style>
+        .about-page .hero {
+            padding-bottom: 105px;
+        }
+
+        .about-page .hero-content {
+            max-width: 800px;
+        }
+
+        .about-page .hero-description {
+            max-width: 680px;
+        }
+
+        .about-story {
+            padding: 110px 0;
+            background: var(--paper-light);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .about-story-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+            gap: 100px;
+            padding-top: 45px;
+            border-top: 1px solid var(--line);
+        }
+
+        .about-statement p {
+            max-width: 500px;
+            color: var(--navy);
+            font-family: "Fraunces", Georgia, serif;
+            font-size: 32px;
+            line-height: 1.25;
+        }
+
+        .about-copy {
+            max-width: 650px;
+        }
+
+        .about-copy p {
+            margin-bottom: 25px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .about-copy p:last-child {
+            margin-bottom: 0;
+        }
+
+        .principles-section {
+            padding: 110px 0;
+            background: var(--paper);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .principles-list {
+            border-top: 1px solid var(--navy);
+        }
+
+        .principle-row {
+            display: grid;
+            grid-template-columns: 80px minmax(0, 1fr) 120px;
+            gap: 30px;
+            align-items: start;
+            padding: 38px 0;
+            border-bottom: 1px solid var(--line);
+            transition:
+                padding var(--transition),
+                background var(--transition);
+        }
+
+        .principle-row:hover {
+            padding-left: 18px;
+            padding-right: 18px;
+            background: rgba(255, 255, 255, 0.45);
+        }
+
+        .principle-number {
+            padding-top: 4px;
+            color: var(--red);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+        }
+
+        .principle-content {
+            max-width: 680px;
+        }
+
+        .principle-content h3 {
+            margin-bottom: 10px;
+        }
+
+        .principle-content p {
+            font-size: 14px;
+            line-height: 1.75;
+        }
+
+        .principle-tag {
+            justify-self: end;
+            padding-top: 5px;
+            color: var(--emerald);
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-align: right;
+        }
+
+        .about-visual .visual-large-text {
+            font-size: clamp(2.8rem, 5vw, 5rem);
+        }
+
+        @media (max-width: 1000px) {
+            .about-story-grid {
+                gap: 60px;
+            }
+        }
+
+        @media (max-width: 760px) {
+            .about-page .hero {
+                padding-bottom: 75px;
+            }
+
+            .about-story,
+            .principles-section {
+                padding: 75px 0;
+            }
+
+            .about-story-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+                padding-top: 30px;
+            }
+
+            .about-statement p {
+                font-size: 25px;
+            }
+
+            .principle-row {
+                grid-template-columns: 40px minmax(0, 1fr);
+                gap: 12px;
+                padding: 30px 0;
+            }
+
+            .principle-row:hover {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .principle-tag {
+                grid-column: 2;
+                justify-self: start;
+                padding-top: 0;
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .principle-row {
+                grid-template-columns: 32px minmax(0, 1fr);
+            }
+
+            .principle-number {
+                font-size: 9px;
+            }
+
+            .principle-content h3 {
+                font-size: 1.18rem;
+            }
+
+            .principle-content p {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body class="about-page">
+
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container nav-container">
+
+            <a
+                class="brand"
+                href="index.html"
+                aria-label="Lahema Labour Consultancy home"
+            >
+                <img class="brand-mark" src="assets/images/lahema-logo.png" alt="Lahema Labour Consultancy logo">
+
+                <span class="brand-text">
+                    <strong>LAHEMA</strong>
+                    <small>LABOUR CONSULTANCY</small>
+                </span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav
+                class="primary-navigation"
+                id="primary-navigation"
+                aria-label="Primary navigation"
+            >
+                <a class="nav-link" href="index.html">Home</a>
+
+                <a class="nav-link" href="services.html">Services</a>
+
+                <a
+                    class="nav-link active"
+                    href="about.html"
+                    aria-current="page"
+                >
+                    About
+                </a>
+
+                <a class="nav-link" href="contact.html">Contact</a>
+
+                <a class="nav-link nav-link-cta" href="contact.html">
+                    Get In Touch
+                </a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <div class="section-kicker">
+                        <span class="kicker-line"></span>
+                        <span>03</span>
+                        <span class="kicker-separator">/</span>
+                        <span>ABOUT LAHEMA</span>
+                    </div>
+
+                    <h1>
+                        A practical approach to
+                        <span class="accent-text">people and work.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Lahema Labour Consultancy is focused on helping
+                        organisations navigate the people, workplace, and
+                        labour matters that sit behind effective work.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a class="button button-primary" href="contact.html">
+                            Work With Us
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                        <a class="text-link" href="#our-story">
+                            Our story
+                            <span aria-hidden="true">↓</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- HERO PANEL -->
+                <aside class="hero-panel" aria-label="About Lahema">
+
+                    <div>
+
+                        <div class="docket-label">
+                            LAHEMA / COMPANY PROFILE
+                        </div>
+
+                        <div class="hero-panel-number">
+                            03 / 05
+                        </div>
+
+                        <div class="hero-panel-rule"></div>
+
+                    </div>
+
+                    <div class="office-details">
+
+                        <span class="office-label">
+                            OUR PRACTICE
+                        </span>
+
+                        <h2>
+                            People.<br>
+                            Practice.<br>
+                            Purpose.
+                        </h2>
+
+                        <p>
+                            Professional consultancy grounded in practical
+                            workplace needs.
+                        </p>
+
+                        <p class="office-landmark">
+                            LABOUR &amp; EMPLOYMENT LAW CONSULTANCY
+                        </p>
+
+                    </div>
+
+                    <div class="panel-footer">
+
+                        <span>
+                            <span class="status-dot"></span>
+                            ZAMBIA
+                        </span>
+
+                        <span>PROFILE / 01</span>
+
+                    </div>
+
+                </aside>
+
+            </div>
+        </section>
+
+        <!-- OUR STORY -->
+        <section class="about-story" id="our-story">
+            <div class="container">
+
+                <div class="section-heading-row">
+
+                    <div class="section-index">
+                        01
+                    </div>
+
+                    <div>
+
+                        <div class="section-kicker">
+                            <span class="kicker-line"></span>
+                            <span>OUR STORY</span>
+                        </div>
+
+                        <h2>
+                            Supporting better workplaces through practical
+                            thinking.
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <div class="about-story-grid">
+
+                    <div class="about-statement">
+                        <p>
+                            The workplace is built by people — and good
+                            structures help those people do their work well.
+                        </p>
+                    </div>
+
+                    <div class="about-copy">
+
+                        <p>
+                            Lahema Labour Consultancy provides professional
+                            support around employment disputes, contracts, disciplinary matters,
+                            and workplace matters.
+                        </p>
+
+                        <p>
+                            Our approach is centred on understanding the
+                            circumstances behind each engagement rather than
+                            treating every workplace challenge as the same.
+                        </p>
+
+                        <p>
+                            From employers seeking compliance guidance to employees
+                            navigating a dispute or termination,
+                            Lahema focuses on clear communication, practical
+                            guidance, and structured solutions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PRINCIPLES -->
+        <section class="principles-section">
+            <div class="container">
+
+                <div class="section-heading-row">
+
+                    <div class="section-index">
+                        02
+                    </div>
+
+                    <div>
+
+                        <div class="section-kicker">
+                            <span class="kicker-line"></span>
+                            <span>WHAT GUIDES US</span>
+                        </div>
+
+                        <h2>
+                            The principles behind the practice.
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <div class="principles-list">
+
+                    <!-- PRINCIPLE 01 -->
+                    <article class="principle-row">
+
+                        <div class="principle-number">
+                            01
+                        </div>
+
+                        <div class="principle-content">
+
+                            <h3>Clarity</h3>
+
+                            <p>
+                                Workplace and labour matters can become
+                                complicated quickly. We value clear
+                                communication and structured thinking so
+                                clients can understand the matter in front
+                                of them.
+                            </p>
+
+                        </div>
+
+                        <div class="principle-tag">
+                            CLEAR
+                        </div>
+
+                    </article>
+
+                    <!-- PRINCIPLE 02 -->
+                    <article class="principle-row">
+
+                        <div class="principle-number">
+                            02
+                        </div>
+
+                        <div class="principle-content">
+
+                            <h3>Professional Practice</h3>
+
+                            <p>
+                                Every engagement deserves a professional,
+                                organised approach that respects the people,
+                                responsibilities, and circumstances involved.
+                            </p>
+
+                        </div>
+
+                        <div class="principle-tag">
+                            PROFESSIONAL
+                        </div>
+
+                    </article>
+
+                    <!-- PRINCIPLE 03 -->
+                    <article class="principle-row">
+
+                        <div class="principle-number">
+                            03
+                        </div>
+
+                        <div class="principle-content">
+
+                            <h3>Practicality</h3>
+
+                            <p>
+                                Advice should be useful beyond the
+                                conversation. We focus on practical
+                                considerations that clients can understand
+                                and apply within their organisations.
+                            </p>
+
+                        </div>
+
+                        <div class="principle-tag">
+                            PRACTICAL
+                        </div>
+
+                    </article>
+
+                    <!-- PRINCIPLE 04 -->
+                    <article class="principle-row">
+
+                        <div class="principle-number">
+                            04
+                        </div>
+
+                        <div class="principle-content">
+
+                            <h3>People</h3>
+
+                            <p>
+                                Behind every policy, process, dispute
+                                decision, and workplace matter are people.
+                                That human dimension remains central to our
+                                approach.
+                            </p>
+
+                        </div>
+
+                        <div class="principle-tag">
+                            HUMAN
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- APPROACH VISUAL -->
+        <section class="focus-section">
+            <div class="container focus-grid">
+
+                <div class="focus-visual about-visual">
+
+                    <div class="visual-docket">
+
+                        <div class="visual-topline">
+                            LAHEMA / PRACTICE FRAMEWORK
+                        </div>
+
+                        <div class="visual-large-text">
+                            PEOPLE
+                        </div>
+
+                        <div class="visual-large-text visual-outline">
+                            WORK
+                        </div>
+
+                        <div class="visual-bottom">
+                            <span>01 — LISTEN</span>
+                            <span>02 — UNDERSTAND</span>
+                            <span>03 — ADVISE</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="focus-content">
+
+                    <div class="section-kicker">
+                        <span class="kicker-line"></span>
+                        <span>THE LAHEMA APPROACH</span>
+                    </div>
+
+                    <h2>
+                        Professional without losing the human side.
+                    </h2>
+
+                    <p>
+                        Workplace consultancy sits at the intersection of
+                        organisations, employees, policies, responsibilities,
+                        and real-world circumstances.
+                    </p>
+
+                    <p>
+                        Our approach is therefore designed to keep both the
+                        organisational and human dimensions of workplace
+                        matters in view.
+                    </p>
+
+                    <a class="button button-secondary" href="services.html">
+                        Explore Our Services
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- LOCATION -->
+        <section class="location-strip">
+
+            <div class="container location-grid">
+
+                <div class="location-label">
+                    <span class="location-pin" aria-hidden="true">⌖</span>
+                    <span>BASED IN ZAMBIA</span>
+                </div>
+
+                <div class="location-address">
+                    <strong>Ndola, Zambia</strong>
+
+                    <span>
+                        Development Bank of Zambia, 2nd Floor, Room 1 &amp; 2,
+                        Right Wing, between Kafubu Mall and the ZRA building.
+                    </span>
+                </div>
+
+                <a class="location-link" href="contact.html">
+                    Contact Us
+                    <span aria-hidden="true">→</span>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+
+            <div class="container cta-container">
+
+                <div class="cta-marker">
+                    05 / 05
+                </div>
+
+                <div class="cta-content">
+
+                    <div class="section-kicker">
+                        <span class="kicker-line"></span>
+                        <span>LET'S TALK</span>
+                    </div>
+
+                    <h2>
+                        Looking for practical
+                        <span>workplace support?</span>
+                    </h2>
+
+                </div>
+
+                <div class="cta-action">
+
+                    <p>
+                        Tell us what you need support with and we can discuss
+                        the appropriate next step.
+                    </p>
+
+                    <a class="button" href="contact.html">
+                        Get In Touch
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="container footer-main">
+
+            <div class="footer-brand">
+
+                <a
+                    class="brand brand-footer"
+                    href="index.html"
+                    aria-label="Lahema Labour Consultancy home"
+                >
+                    <img class="brand-mark" src="assets/images/lahema-logo.png" alt="Lahema Labour Consultancy logo">
+
+                    <span class="brand-text">
+                        <strong>LAHEMA</strong>
+                        <small>LABOUR CONSULTANCY</small>
+                    </span>
+                </a>
+
+                <p>
+                    Professional labour and workplace consultancy support
+                    for organisations in Zambia.
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <span class="footer-heading">
+                    NAVIGATION
+                </span>
+
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+            <div class="footer-column footer-office">
+
+                <span class="footer-heading">
+                    OFFICE
+                </span>
+
+                <p>
+                    Ndola<br>
+                    Zambia
+                </p>
+
+                <span class="footer-country">
+                    ZAMBIA / 01
+                </span>
+
+            </div>
+
+            <div class="footer-column footer-status">
+
+                <span class="footer-heading">
+                    STATUS
+                </span>
+
+                <p>
+                    Available for<br>
+                    consultations.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="container footer-bottom-inner">
+
+                <span>
+                    © 2026 Lahema Labour Consultancy. All rights reserved.
+                </span>
+
+                <span class="footer-credit">
+                    Website by
+                    <a href="https://orangecore.xyz" target="_blank" rel="noopener noreferrer" aria-label="Website developer">
+                        Orange Core
+                    </a>
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

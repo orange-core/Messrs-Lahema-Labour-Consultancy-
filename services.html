@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Services | Lahema Labour Consultancy</title>
+    <meta
+        name="description"
+        content="Employment disputes, contracts, disciplinary hearings, retrenchment, labour relations and workplace compliance services from Lahema Labour Consultancy, Ndola."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="icon" type="image/png" href="assets/images/lahema-logo.png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Services page-specific styles -->
+    <style>
+        .services-page .hero {
+            padding-bottom: 105px;
+        }
+
+        .services-page .hero-content {
+            max-width: 780px;
+        }
+
+        .services-page .hero-description {
+            max-width: 680px;
+        }
+
+        .services-directory {
+            padding: 110px 0;
+            background: var(--paper-light);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .service-detail-list {
+            border-top: 1px solid var(--navy);
+        }
+
+        .service-detail {
+            display: grid;
+            grid-template-columns: 80px minmax(0, 1fr) 180px;
+            gap: 35px;
+            padding: 42px 0;
+            border-bottom: 1px solid var(--line);
+            transition:
+                padding var(--transition),
+                background var(--transition);
+        }
+
+        .service-detail:hover {
+            padding-left: 18px;
+            padding-right: 18px;
+            background: rgba(255, 255, 255, 0.45);
+        }
+
+        .service-detail-number {
+            padding-top: 5px;
+            color: var(--red);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+        }
+
+        .service-detail-body {
+            max-width: 700px;
+        }
+
+        .service-detail-body h3 {
+            margin-bottom: 12px;
+        }
+
+        .service-detail-body p {
+            font-size: 14px;
+            line-height: 1.75;
+        }
+
+        .service-detail-meta {
+            align-self: start;
+            justify-self: end;
+            padding-top: 5px;
+            color: var(--ink-muted);
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-align: right;
+        }
+
+        .service-detail-meta span {
+            display: block;
+            margin-top: 8px;
+            color: var(--emerald);
+            font-size: 9px;
+        }
+
+        .services-note {
+            display: grid;
+            grid-template-columns: 80px minmax(0, 1fr);
+            gap: 20px;
+            margin-top: 55px;
+            padding-top: 28px;
+            border-top: 1px solid var(--line);
+        }
+
+        .services-note-index {
+            color: var(--red);
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+        }
+
+        .services-note p {
+            max-width: 700px;
+            font-size: 13px;
+        }
+
+        .services-page .focus-section {
+            background: var(--paper);
+        }
+
+        @media (max-width: 760px) {
+            .services-page .hero {
+                padding-bottom: 75px;
+            }
+
+            .services-directory {
+                padding: 75px 0;
+            }
+
+            .service-detail {
+                grid-template-columns: 40px minmax(0, 1fr);
+                gap: 12px;
+                padding: 30px 0;
+            }
+
+            .service-detail:hover {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .service-detail-meta {
+                grid-column: 2;
+                justify-self: start;
+                padding-top: 0;
+                text-align: left;
+            }
+
+            .service-detail-meta span {
+                display: inline;
+                margin-left: 8px;
+            }
+
+            .services-note {
+                grid-template-columns: 45px minmax(0, 1fr);
+                gap: 10px;
+                margin-top: 40px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .service-detail {
+                grid-template-columns: 32px minmax(0, 1fr);
+            }
+
+            .service-detail-number {
+                font-size: 9px;
+            }
+
+            .service-detail-body h3 {
+                font-size: 1.18rem;
+            }
+
+            .service-detail-body p {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body class="services-page">
+
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container nav-container">
+
+            <a
+                class="brand"
+                href="index.html"
+                aria-label="Lahema Labour Consultancy home"
+            >
+                <img class="brand-mark" src="assets/images/lahema-logo.png" alt="Lahema Labour Consultancy logo">
+
+                <span class="brand-text">
+                    <strong>LAHEMA</strong>
+                    <small>LABOUR CONSULTANCY</small>
+                </span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav
+                class="primary-navigation"
+                id="primary-navigation"
+                aria-label="Primary navigation"
+            >
+                <a class="nav-link" href="index.html">Home</a>
+
+                <a
+                    class="nav-link active"
+                    href="services.html"
+                    aria-current="page"
+                >
+                    Services
+                </a>
+
+                <a class="nav-link" href="about.html">About</a>
+
+                <a class="nav-link" href="contact.html">Contact</a>
+
+                <a class="nav-link nav-link-cta" href="contact.html">
+                    Get In Touch
+                </a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <div class="section-kicker">
+                        <span class="kicker-line"></span>
+                        <span>02</span>
+                        <span class="kicker-separator">/</span>
+                        <span>SERVICES</span>
+                    </div>
+
+                    <h1>
+                        Labour support
+                        <span class="accent-text">built around</span>
+                        the workplace.
+                    </h1>
+
+                    <p class="hero-description">
+                        Messrs Lahema Labour Consultancy Limited advises
+                        employers and employees on employment disputes,
+                        contracts, disciplinary matters, retrenchment and
+                        workplace compliance under Zambian labour law.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="contact.html">
+                            Discuss Your Needs
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                        <a class="text-link" href="#service-directory">
+                            View service directory
+                            <span aria-hidden="true">↓</span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- HERO PANEL -->
+                <aside class="hero-panel" aria-label="Service information">
+
+                    <div>
+                        <div class="docket-label">
+                            LAHEMA / SERVICE DIRECTORY
+                        </div>
+
+                        <div class="hero-panel-number">
+                            02 / 05
+                        </div>
+
+                        <div class="hero-panel-rule"></div>
+                    </div>
+
+                    <div class="office-details">
+
+                        <span class="office-label">
+                            PROFESSIONAL SUPPORT
+                        </span>
+
+                        <h2>
+                            People.<br>
+                            Work.<br>
+                            Structure.
+                        </h2>
+
+                        <p>
+                            Advisory support designed around the practical
+                            realities of the workplace.
+                        </p>
+
+                        <p class="office-landmark">
+                            LABOUR &amp; EMPLOYMENT LAW CONSULTANCY
+                        </p>
+
+                    </div>
+
+                    <div class="panel-footer">
+                        <span>
+                            <span class="status-dot"></span>
+                            AVAILABLE FOR CONSULTATION
+                        </span>
+
+                        <span>ZAMBIA</span>
+                    </div>
+
+                </aside>
+
+            </div>
+        </section>
+
+        <!-- SERVICES DIRECTORY -->
+        <section
+            class="services-directory"
+            id="service-directory"
+        >
+            <div class="container">
+
+                <div class="section-heading-row">
+
+                    <div class="section-index">
+                        01
+                    </div>
+
+                    <div>
+                        <div class="section-kicker">
+                            <span class="kicker-line"></span>
+                            <span>SERVICE DIRECTORY</span>
+                        </div>
+
+                        <h2>
+                            Practical expertise for the people side of work.
+                        </h2>
+                    </div>
+
+                </div>
+
+                <div class="service-detail-list">
+
+                    <!-- SERVICE 01 -->
+                    <article class="service-detail">
+
+                        <div class="service-detail-number">
+                            01
+                        </div>
+
+                        <div class="service-detail-body">
+                            <h3>Employment Disputes &amp; Litigation</h3>
+
+                            <p>
+                                Unfair dismissal, wrongful termination and exit agreement matters, handled from initial advice through to resolution.
+                            </p>
+                        </div>
+
+                        <div class="service-detail-meta">
+                            DISPUTES
+                            <span>LITIGATION</span>
+                        </div>
+
+                    </article>
+
+                    <!-- SERVICE 02 -->
+                    <article class="service-detail">
+
+                        <div class="service-detail-number">
+                            02
+                        </div>
+
+                        <div class="service-detail-body">
+                            <h3>Contracts &amp; Agreements</h3>
+
+                            <p>
+                                Drafting and reviewing employment contracts and workplace agreements to protect both employer and employee interests.
+                            </p>
+                        </div>
+
+                        <div class="service-detail-meta">
+                            CONTRACTS
+                            <span>AGREEMENTS</span>
+                        </div>
+
+                    </article>
+
+                    <!-- SERVICE 03 -->
+                    <article class="service-detail">
+
+                        <div class="service-detail-number">
+                            03
+                        </div>
+
+                        <div class="service-detail-body">
+                            <h3>Discipline &amp; Workplace Conduct</h3>
+
+                            <p>
+                                Disciplinary and grievance procedures, misconduct hearings and workplace investigations conducted fairly and correctly.
+                            </p>
+                        </div>
+
+                        <div class="service-detail-meta">
+                            DISCIPLINE
+                            <span>CONDUCT</span>
+                        </div>
+
+                    </article>
+
+                    <!-- SERVICE 04 -->
+                    <article class="service-detail">
+
+                        <div class="service-detail-number">
+                            04
+                        </div>
+
+                        <div class="service-detail-body">
+                            <h3>Redundancy &amp; Restructuring</h3>
+
+                            <p>
+                                Retrenchment and redundancy matters, guiding employers and employees through the process under Zambian labour law.
+                            </p>
+                        </div>
+
+                        <div class="service-detail-meta">
+                            REDUNDANCY
+                            <span>RESTRUCTURING</span>
+                        </div>
+
+                    </article>
+
+                    <!-- SERVICE 05 -->
+                    <article class="service-detail">
+
+                        <div class="service-detail-number">
+                            05
+                        </div>
+
+                        <div class="service-detail-body">
+                            <h3>Employee Rights &amp; Compliance</h3>
+
+                            <p>
+                                Employer compliance, workplace policies, HR compliance and labour inspection matters under Zambian regulation.
+                            </p>
+                        </div>
+
+                        <div class="service-detail-meta">
+                            RIGHTS
+                            <span>COMPLIANCE</span>
+                        </div>
+
+                    </article>
+
+                    <!-- SERVICE 06 -->
+                    <article class="service-detail">
+
+                        <div class="service-detail-number">
+                            06
+                        </div>
+
+                        <div class="service-detail-body">
+                            <h3>Labour Relations</h3>
+
+                            <p>
+                                Trade union and industrial relations matters, collective bargaining, negotiation, mediation and conciliation.
+                            </p>
+                        </div>
+
+                        <div class="service-detail-meta">
+                            LABOUR
+                            <span>RELATIONS</span>
+                        </div>
+
+                    </article>
+
+                    <!-- SERVICE 07 -->
+                    <article class="service-detail">
+
+                        <div class="service-detail-number">
+                            07
+                        </div>
+
+                        <div class="service-detail-body">
+                            <h3>Benefits &amp; Harassment Claims</h3>
+
+                            <p>
+                                Employee benefits and compensation matters, and workplace harassment or discrimination claims.
+                            </p>
+                        </div>
+
+                        <div class="service-detail-meta">
+                            BENEFITS
+                            <span>CLAIMS</span>
+                        </div>
+
+                    </article>
+
+                    <!-- SERVICE 08 -->
+                    <article class="service-detail">
+
+                        <div class="service-detail-number">
+                            08
+                        </div>
+
+                        <div class="service-detail-body">
+                            <h3>Advisory</h3>
+
+                            <p>
+                                Employment advisory and legal consultations for employers and employees navigating workplace questions.
+                            </p>
+                        </div>
+
+                        <div class="service-detail-meta">
+                            EMPLOYMENT
+                            <span>ADVISORY</span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="services-note">
+
+                    <div class="services-note-index">
+                        NOTE
+                    </div>
+
+                    <p>
+                        Every organisation has different requirements.
+                        Services can be discussed and structured around the
+                        specific nature, size, and needs of the organisation.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- APPROACH -->
+        <section class="focus-section">
+            <div class="container focus-grid">
+
+                <div class="focus-visual">
+
+                    <div class="visual-docket">
+
+                        <div class="visual-topline">
+                            LAHEMA / WORKPLACE PRACTICE
+                        </div>
+
+                        <div class="visual-large-text">
+                            PEOPLE
+                        </div>
+
+                        <div class="visual-large-text visual-outline">
+                            WORK
+                        </div>
+
+                        <div class="visual-bottom">
+                            <span>01 — PEOPLE</span>
+                            <span>02 — PRACTICE</span>
+                            <span>03 — PROGRESS</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="focus-content">
+
+                    <div class="section-kicker">
+                        <span class="kicker-line"></span>
+                        <span>OUR APPROACH</span>
+                    </div>
+
+                    <h2>
+                        Clear advice. Practical thinking. Human focus.
+                    </h2>
+
+                    <p>
+                        Good workplace support is not only about policies and
+                        paperwork. It is also about understanding the people,
+                        structures, and circumstances behind the work.
+                    </p>
+
+                    <p>
+                        Lahema approaches consultancy with a practical focus,
+                        helping clients work through labour and people-related
+                        matters with greater clarity and organisation.
+                    </p>
+
+                    <a class="button button-secondary" href="contact.html">
+                        Start a Conversation
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- LOCATION -->
+        <section class="location-strip">
+            <div class="container location-grid">
+
+                <div class="location-label">
+                    <span class="location-pin" aria-hidden="true">⌖</span>
+                    <span>OUR OFFICE</span>
+                </div>
+
+                <div class="location-address">
+                    <strong>Ndola, Zambia</strong>
+                    <span>
+                        Development Bank of Zambia, 2nd Floor, Room 1 &amp; 2,
+                        Right Wing, between Kafubu Mall and the ZRA building.
+                    </span>
+                </div>
+
+                <a class="location-link" href="contact.html">
+                    Contact Us
+                    <span aria-hidden="true">→</span>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container cta-container">
+
+                <div class="cta-marker">
+                    05 / 05
+                </div>
+
+                <div class="cta-content">
+
+                    <div class="section-kicker">
+                        <span class="kicker-line"></span>
+                        <span>LET'S TALK</span>
+                    </div>
+
+                    <h2>
+                        Have a workplace matter
+                        <span>to discuss?</span>
+                    </h2>
+
+                </div>
+
+                <div class="cta-action">
+
+                    <p>
+                        Tell us what you are working through and we can
+                        discuss the appropriate next step.
+                    </p>
+
+                    <a class="button" href="contact.html">
+                        Get In Touch
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="container footer-main">
+
+            <div class="footer-brand">
+
+                <a
+                    class="brand brand-footer"
+                    href="index.html"
+                    aria-label="Lahema Labour Consultancy home"
+                >
+                    <img class="brand-mark" src="assets/images/lahema-logo.png" alt="Lahema Labour Consultancy logo">
+
+                    <span class="brand-text">
+                        <strong>LAHEMA</strong>
+                        <small>LABOUR CONSULTANCY</small>
+                    </span>
+                </a>
+
+                <p>
+                    Professional labour and workplace consultancy support
+                    for organisations in Zambia.
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <span class="footer-heading">
+                    NAVIGATION
+                </span>
+
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+            <div class="footer-column footer-office">
+
+                <span class="footer-heading">
+                    OFFICE
+                </span>
+
+                <p>
+                    Ndola<br>
+                    Zambia
+                </p>
+
+                <span class="footer-country">
+                    ZAMBIA / 01
+                </span>
+
+            </div>
+
+            <div class="footer-column footer-status">
+
+                <span class="footer-heading">
+                    STATUS
+                </span>
+
+                <p>
+                    Available for<br>
+                    consultations.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+
+                <span>
+                    © 2026 Lahema Labour Consultancy. All rights reserved.
+                </span>
+
+                <span class="footer-credit">
+                    Website by
+                    <a href="https://orangecore.xyz" target="_blank" rel="noopener noreferrer" aria-label="Website developer">
+                        Orange Core
+                    </a>
+                </span>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
